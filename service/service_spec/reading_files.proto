@@ -1,0 +1,11 @@
+syntax = 'proto3';
+
+message Input{
+    string model_path = 1;
+}
+
+message Output {}
+
+service Message{
+    rpc printing(Input) returns (Output) {}
+}
